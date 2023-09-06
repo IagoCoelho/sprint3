@@ -6,16 +6,21 @@ export default function NavBar({active}) {
             <ul className="flex gap-12 items-end text-slate-400 text-sm">
                 <li>
                     <a href="#">
-                        <h1 className="text-2xl font-bold text-slate-100">Sprint 3</h1>
+                        <h1 className="text-2xl font-bold text-slate-100">PluSoft</h1>
                     </a>
                 </li>
                 <li>
-                    <Link className={active=="registrar_usuario" && "text-slate-300"} href="/registrar_usuario">
-                    registrar usuario
+                    <Link className={active=="registro_usuario" && "text-slate-300"} href="/registro_usuario">
+                        Registro de Usuario
                     </Link>
                 </li>
                 <li>
-                    <Link className={active=="cadastrar_feedback" && "text-slate-300"} href="/cadastrar_feedback">
+                    <Link className={active=="cadastro_feedback" && "text-slate-300"} href="/cadastro_feedback">
+                        Cadastro de feedback
+                    </Link>
+                </li>
+                <li>
+                    <Link className={active=="contas" && "text-slate-300"} href="/contas">
                         contas
                     </Link>
                 </li>
